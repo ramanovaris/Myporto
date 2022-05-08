@@ -12,11 +12,13 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">MyPorto</a>
+        <a class="navbar-brand" href="#">TOURGUIDE</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,10 +33,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about/">About</a>
+              <a class="nav-link active" href="/product/">Paket</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -49,8 +51,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="/contact/">Contact</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="/product/">Product</a></li>
+                <li><a class="dropdown-item" href="/kupon/">Kupon</a></li>
               </ul>
             </li>
           </ul>
@@ -61,9 +62,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -71,15 +70,76 @@
     <!-- Navbar end -->
 
     <!-- first layout start -->
-    <div class="container-fluid bg-dark text-light" style="height: 100vh">
-      <div class="row text-center align-items-center">
-        <div class="col-8">WELCOME MY PRODUCT</div>
-        <div class="col-4">
-          <img
-            src="https://dl.kaskus.id/i1.wp.com/toghr.com/wp-content/uploads/2021/02/1.png?resize=965%2C538"
-            alt="placeholder"
-            style="width: 100%"
-          />
+    <div class="container-fluid text-dark mt-4">
+      <div class="row justify-content-center">
+        <div class="card m-3" style="max-width: 540px; cursor: pointer;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/assets/paris.jpg"
+                class="img-fluid"
+                alt="..."
+                style="height: 100%"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paket Entry Class</h5>
+                <p class="card-text">
+                  Nikmati perjalanan bersama saya yang menakjupkan.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Rp. 300.000,-/orang</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card m-3" style="max-width: 540px; cursor: pointer;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/assets/menara pisa.jpg"
+                class="img-fluid"
+                alt="..."
+                style="height: 100%"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paket Medium Class</h5>
+                <p class="card-text">
+                  Nikmati perjalanan bersama saya yang menakjupkan.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Rp. 500.000,-/orang</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card m-3" style="max-width: 540px; cursor: pointer;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/assets/candi borobudur.jpg"
+                class="img-fluid"
+                alt="..."
+                style="height: 100%"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Paket High Class</h5>
+                <p class="card-text">
+                  Nikmati perjalanan bersama saya yang menakjupkan.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Rp. 1.000.000,-/orang</small>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
